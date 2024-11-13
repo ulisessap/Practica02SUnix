@@ -64,6 +64,21 @@ Particiones existentes:
 * Espacio sin asignar: Hay un pequeño espacio no asignado de 1.00 MiB al final del disco.
 Este esquema de particiones es típico en instalaciones de Linux, con una partición primaria para el arranque, una partición extendida que contiene múltiples particiones lógicas, incluyendo particiones para el sistema de archivos, intercambio (swap), y otros propósitos.
 
+Entonces primero vamos a modificar /dev/sda8
+
+![image](https://github.com/user-attachments/assets/45594306-e151-4554-9282-5daddafee81a)
+
+![image](https://github.com/user-attachments/assets/da2ecb14-4af6-4e25-a244-216be791de38)
+
+Configuramos 5987 MiB de espacio libre antes de la partición /dev/sda8. Esto implica que la partición se moverá hacia la derecha, dejando espacio no asignado delante de ella.
+El nuevo tamaño de la partición se ha establecido en 7201 MiB. Esto indica que la partición se reducirá de su tamaño original para liberar espacio adicional.
+
+
+
+
+
+
+
 
 
 
