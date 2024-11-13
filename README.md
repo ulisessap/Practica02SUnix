@@ -95,6 +95,49 @@ Por ultimo, modificaremos /dev/sda2
 
 ![image](https://github.com/user-attachments/assets/44ccf906-c912-45c9-881d-dbab9141fd46)
 
+Luego asiganamos el espacio a /dev/sda1
+
+![image](https://github.com/user-attachments/assets/74da8d65-1123-4b52-a032-e50b392a51aa)
+
+
+![image](https://github.com/user-attachments/assets/6ac7c9fe-3a7f-4ea0-9d5f-008b35b64e7f)
+
+
+![image](https://github.com/user-attachments/assets/9cc50f53-7dce-466e-9d48-8667bf9efebf)
+
+
+![image](https://github.com/user-attachments/assets/886e447d-93a7-456d-b1fa-51165ca24a4f)
+
+Despues de esto guardamos los cambios
+
+
+![image](https://github.com/user-attachments/assets/f1fa488e-aa4d-4edb-8bad-5fd491ff3536)
+
+Y salimos de la herramienta
+
+
+![image](https://github.com/user-attachments/assets/ba8dbdb6-6e5d-4082-97dd-8336b7cb8037)
+
+Volvemos a las settings de la máquina virtual y en la parte de CD/DVD, seleccionamos la opción "Use physical drive" para volver a iniciar el sistema de debian con la terminal.
+
+
+![image](https://github.com/user-attachments/assets/128de650-fd6d-4dd5-aed3-7b17f9e817a4)
+
+Para comprobar los cambios realizados en GParted, volvemos a ejecutar los comandos "df -h" y "lsblk"
+
+![image](https://github.com/user-attachments/assets/935f5450-c209-4a9a-916e-f194f9ff0e71)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
