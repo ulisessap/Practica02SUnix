@@ -73,6 +73,16 @@ Entonces primero vamos a modificar /dev/sda8
 Configuramos 5987 MiB de espacio libre antes de la partición /dev/sda8. Esto implica que la partición se moverá hacia la derecha, dejando espacio no asignado delante de ella.
 El nuevo tamaño de la partición se ha establecido en 7201 MiB. Esto indica que la partición se reducirá de su tamaño original para liberar espacio adicional.
 
+![image](https://github.com/user-attachments/assets/700f3d8a-b5a1-4277-bf69-e81c78026b78)
+
+La particion sda8  ha sido movida hacia la derecha, liberando 5.85 GiB de espacio no asignado (unallocated) entre las particiones lógicas dentro de la extendida Además, el tamaño de la partición /dev/sda8 se ha reducido de 12.88 GiB a 7.03 GiB.Espacio no asignado ,se ha creado un nuevo espacio no asignado de 5.85 GiB, que antes formaba parte de la partición /dev/sda8.
+
+Ahora modificaremos las particiones /dev/sda5, /dev/sda6, /dev/sda7.
+
+![image](https://github.com/user-attachments/assets/bebbaef0-a0d2-4193-bdd0-455c451ba177)
+
+![image](https://github.com/user-attachments/assets/e40eb6ab-7889-4c90-b1a5-99def4fe5345)
+
 
 
 
