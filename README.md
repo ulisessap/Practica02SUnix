@@ -127,6 +127,8 @@ Para comprobar los cambios realizados en GParted, volvemos a ejecutar los comand
 
 ![image](https://github.com/user-attachments/assets/935f5450-c209-4a9a-916e-f194f9ff0e71)
 
+# Configuración de discos con LVM (solo para VMs con LVM)
+
 
 
 
