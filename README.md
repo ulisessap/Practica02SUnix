@@ -37,6 +37,35 @@ Con el comando lsblk, podemos ver lo siguiente:
 * sda8: Partición de 12.9G montada en /home.
 * sr0: Unidad de CD/DVD con un tamaño de 1024M.
 
+Ahora iniciamos la maquina virtual y vemos lo siegiente:
+
+![image](https://github.com/user-attachments/assets/1ac399d8-19d7-436e-ae38-fbaefaf103b3)
+
+Luego sekleccionamos esta opcion 
+
+![image](https://github.com/user-attachments/assets/0283a5b8-50a6-4373-adfd-691c8156d121)
+
+Y sleccionamos las opciones por defecto, por lo que solo pulsamos enter en la terminal, despues veremos lo siguiente en donde vemos la particion del disco:
+
+![image](https://github.com/user-attachments/assets/73705f17-0316-4a2c-9593-def9ae833d92)
+
+Vemos que tenemos la siguiente informacion
+
+* Disco seleccionado: /dev/sda con una capacidad total de 20.00 GiB.
+
+Particiones existentes:
+
+* /dev/sda1: Partición primaria con sistema de archivos ext4, tamaño de 4.12 GiB, y montada como partición de arranque (boot).
+* /dev/sda2: Partición extendida que abarca varias particiones lógicas.
+* /dev/sda5: Partición lógica dentro de la extendida, con sistema de archivos ext4, y un tamaño de 1.68 GiB.
+* /dev/sda6: Partición lógica usada como linux-swap con un tamaño de 976.00 MiB.
+* /dev/sda7: Otra partición lógica con sistema de archivos ext4, y un tamaño de 371.00 MiB.
+* /dev/sda8: Partición lógica con sistema de archivos ext4, y un tamaño de 12.88 GiB.
+* Espacio sin asignar: Hay un pequeño espacio no asignado de 1.00 MiB al final del disco.
+Este esquema de particiones es típico en instalaciones de Linux, con una partición primaria para el arranque, una partición extendida que contiene múltiples particiones lógicas, incluyendo particiones para el sistema de archivos, intercambio (swap), y otros propósitos.
+
+
+
 
 
 
