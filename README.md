@@ -81,7 +81,23 @@ Ahora modificaremos las particiones /dev/sda5, /dev/sda6, /dev/sda7.
 
 ![image](https://github.com/user-attachments/assets/bebbaef0-a0d2-4193-bdd0-455c451ba177)
 
-![image](https://github.com/user-attachments/assets/e40eb6ab-7889-4c90-b1a5-99def4fe5345)
+![image](https://github.com/user-attachments/assets/f188ca2b-7425-46da-9e53-2f578d800d4f)
+
+![image](https://github.com/user-attachments/assets/8281114d-648b-454b-83f2-83378873c560)
+
+Repetimos este paso con /dev/sda5 y /dev/sda6. Esto con la intención de mover el nuevo espacio al lado de /dev/sda1.
+
+![image](https://github.com/user-attachments/assets/5234852c-2731-4b37-8020-92866929d60f)
+
+Por ultimo, modificaremos /dev/sda2
+
+![image](https://github.com/user-attachments/assets/4d8f4573-ce14-4a6f-b558-4841f3e3afc2)
+
+![image](https://github.com/user-attachments/assets/44ccf906-c912-45c9-881d-dbab9141fd46)
+
+
+
+
 
 
 
