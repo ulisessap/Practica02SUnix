@@ -172,7 +172,15 @@ Ahora redimensionamos la particion 2 al 100%
 
 ![image](https://github.com/user-attachments/assets/36379ca4-d3c0-4206-bb58-b8248a0168e7)
 
+Ejecutamos como root el comando para expaandir el volumen logico 
 
+![image](https://github.com/user-attachments/assets/0630d82d-3df7-4b36-bef0-5c91d8d0c8f4)
+
+
+Este comando, ejecutado en un sistema operativo Debian con privilegios de root, está intentando expandir un volumen lógico (LV). Específicamente, busca aumentar el tamaño del LV denominado /dev/mapper/debian--vg-root hasta ocupar todo el espacio libre (100%FREE) disponible en el grupo de volúmenes (VG).
+- lvextend: Esta es la herramienta de línea de comandos utilizada para administrar volúmenes lógicos en sistemas Linux que utilizan LVM (Logical Volume Manager).
+- -L +100%FREE: Esta opción indica que se debe aumentar el tamaño del LV en una cantidad igual al 100% del espacio libre disponible en el VG.
+- /dev/mapper/debian--vg-root: Este es el nombre del LV que se desea expandir. El nombre suele seguir un patrón que indica el VG al que pertenece (debian--vg) y el nombre del LV (root).
 
 
 
