@@ -144,9 +144,6 @@ Ahora para mas comodidad nos conectamos por ssh para poder instalar la herramine
 
 ![image](https://github.com/user-attachments/assets/2335c1f3-2bf6-4911-b0d1-5d19f39541c0)
 
-Hacemos un apt update
-
-![image](https://github.com/user-attachments/assets/be622b4c-925c-422c-9b0b-b5c1d06040aa)
 
 Verificamos los dispositivos disponibles SCSI
 
