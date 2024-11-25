@@ -129,6 +129,50 @@ Para comprobar los cambios realizados en GParted, volvemos a ejecutar los comand
 
 # Configuración de discos con LVM (solo para VMs con LVM)
 
+Para esta parte ocupamos la maquina con caracteristicas LVM de la practica anterior
+Primero hacemos la expansion de disco
+
+![image](https://github.com/user-attachments/assets/c1c30c32-42bd-4570-9670-090490559b03)
+
+Luego iniciamos el sistema y ejecutamos los comandos de antes df -h y lsblk
+
+![image](https://github.com/user-attachments/assets/c61d54bb-2a36-4f9f-a033-8008224f8741)
+
+Y podemos ver la informacion de las particones
+
+Ahora para mas comodidad nos conectamos por ssh para poder instalar la herramineta parted 
+
+![image](https://github.com/user-attachments/assets/2335c1f3-2bf6-4911-b0d1-5d19f39541c0)
+
+Hacemos un apt update
+
+![image](https://github.com/user-attachments/assets/be622b4c-925c-422c-9b0b-b5c1d06040aa)
+
+Verificamos los dispositivos disponibles SCSI
+
+![image](https://github.com/user-attachments/assets/d32bf5b9-1a25-4a9f-bd50-5566a4d5c015)
+
+Este comando le indica al sistema operativo que realice un "rescan" del dispositivo SCSI identificado por 32:0:0:0 y específicamente del disco sda. Luego con parted abrimos el disco /dev/sda
+
+![image](https://github.com/user-attachments/assets/eacfc2e4-0cf7-4749-b8bc-fceac32a18f9)
+
+Y con el comando print , vemos informacion sobre las particiones 
+
+![image](https://github.com/user-attachments/assets/3717b833-884d-403b-9b79-82c7c313d381)
+
+El disco tiene una tabla de particiones de tipo MBR (msdos), y las particiones son las siguientes:
+
+- Partición 1:
+Inicio: 1049kB Fin: 512MB Tamaño: 511MB Tipo: Primaria Sistema de archivos: ext2 Flags: boot (indicando que es una partición de arranque)
+
+- Partición 2:
+Inicio: 513MB Fin: 21.5GB Tamaño: 21.0GB Tipo: Extendida No tiene un sistema de archivos directamente porque es un contenedor para particiones lógicas.
+
+- Partición 5:
+Inicio: 513MB Fin: 21.5GB Tamaño: 21.0GB Tipo: Lógica Sistema de archivos: lvm (indica que esta partición se usa para LVM, Logical Volume Management)
+
+
+
 
 
 
