@@ -168,7 +168,9 @@ Inicio: 513MB Fin: 21.5GB Tamaño: 21.0GB Tipo: Extendida No tiene un sistema de
 - Partición 5:
 Inicio: 513MB Fin: 21.5GB Tamaño: 21.0GB Tipo: Lógica Sistema de archivos: lvm (indica que esta partición se usa para LVM, Logical Volume Management)
 
+Ahora redimensionamos la particion 2 al 100%
 
+![image](https://github.com/user-attachments/assets/36379ca4-d3c0-4206-bb58-b8248a0168e7)
 
 
 
