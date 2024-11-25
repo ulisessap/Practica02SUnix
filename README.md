@@ -182,11 +182,13 @@ Este comando, ejecutado en un sistema operativo Debian con privilegios de root, 
 - -L +100%FREE: Esta opción indica que se debe aumentar el tamaño del LV en una cantidad igual al 100% del espacio libre disponible en el VG.
 - /dev/mapper/debian--vg-root: Este es el nombre del LV que se desea expandir. El nombre suele seguir un patrón que indica el VG al que pertenece (debian--vg) y el nombre del LV (root).
 
+Por ultimo , usamos el comando resize2fs que se utiliza en sistemas Linux para modificar el tamaño de un sistema de archivos ext2, ext3 o ext4.
 
+![image](https://github.com/user-attachments/assets/299471b8-6ec8-4ee8-ad44-0daf1b6bd246)
 
-
-
-
+- resize2fs /dev/mapper/debian--vg-root: Este es el comando principal. Se está intentando redimensionar el sistema de archivos ubicado en el dispositivo de bloque /dev/mapper/debian--vg-root. Este dispositivo, como vimos antes, es un volumen lógico (LV) manejado por LVM.
+- resize2fs 1.47.0 (5-Feb-2023): Esta línea muestra la versión de la herramienta resize2fs que se está utilizando.
+- The filesystem is already 1056768 (4k) blocks long. Nothing to do!: Este mensaje es el resultado de ejecutar el comando. Indica que el sistema de archivos ya tiene el tamaño máximo posible, por lo que no se realizaron cambios.
 
 
 
